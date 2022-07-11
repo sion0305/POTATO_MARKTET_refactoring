@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 
 import com.ssg.potato.dao.AuctionDao;
 import com.ssg.potato.dao.mybatis.mapper.AuctionMapper;
-import com.ssg.potato.domain.Auction;
+import com.ssg.potato.item.model.Auction;
 
 @Repository
 public class MyBatisAuctionDao implements AuctionDao {

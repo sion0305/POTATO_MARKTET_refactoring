@@ -9,14 +9,14 @@
 
   		</insert>
   		<!--로그인 -->
-  		<select id="readMemberWithIDPW" resultType="com.ssg.potato.domain.Member">
+  		<select id="readMemberWithIDPW" resultType="com.ssg.potato.account.model.Member">
 			select *
 			from member
 			where member_id=#{member_id} and member_pw=#{pw}
 		</select>	
 		
 		<!--회원정보 찾기 -->
-  		<select id="memberFind" resultType="com.ssg.potato.domain.Member">
+  		<select id="memberFind" resultType="com.ssg.potato.account.model.Member">
 			select *
 			from member
 			where member_id=#{member_id}

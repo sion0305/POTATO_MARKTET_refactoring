@@ -5,7 +5,7 @@ import java.util.List;
 
 import org.springframework.dao.DataAccessException;
 
-import com.ssg.potato.domain.Auction;
+import com.ssg.potato.item.model.Auction;
 
 public interface AuctionDao {
 

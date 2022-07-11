@@ -5,7 +5,7 @@
    <!-- item -->
    <!--장바구니 저장된 직거래 찾기 -->
    <select id="getItemListById"
-      resultType="com.ssg.potato.domain.ItemThumb">
+      resultType="com.ssg.potato.item.model.ItemThumb">
       select item_id, title, price, confirm, fileName
       from item i 
       where reserve=#{member_id}
@@ -14,7 +14,7 @@
    
    <!-- 직거래 예약 찾기 -->
    <select id="getItemReserve"
-      resultType="com.ssg.potato.domain.Item">
+      resultType="com.ssg.potato.item.model.Item">
       select *
       from item
       where item_id=#{item_id}
@@ -43,7 +43,7 @@
 
    <!--장바구니 저장된 공구 찾기 -->
    <select id="getGroupListById"
-      resultType="com.ssg.potato.domain.GroupThumb">
+      resultType="com.ssg.potato.item.model.GroupThumb">
       select title, discountprice, currentpeople, status, group_id, filename
       from groupitem g join groupreserve gr using (group_id)
       where gr.member_id=#{member_id}
@@ -52,7 +52,7 @@
 
    <!-- 공구 예약 찾기 -->
    <select id="getGroupReserve"
-      resultType="com.ssg.potato.domain.Group">
+      resultType="com.ssg.potato.item.model.Group">
       select *
       from groupitem
       where group_id=#{group_id}

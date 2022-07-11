@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import com.ssg.potato.dao.MemberDao;
-import com.ssg.potato.domain.Member;
+import com.ssg.potato.account.model.Member;
 
 @Repository
 public class MyBatisMemberDao implements MemberDao{

@@ -4,9 +4,9 @@ import java.util.List;
 
 import org.apache.ibatis.annotations.Mapper;
 
-import com.ssg.potato.domain.AuctionThumb;
-import com.ssg.potato.domain.GroupThumb;
-import com.ssg.potato.domain.ItemThumb;
+import com.ssg.potato.item.model.AuctionThumb;
+import com.ssg.potato.item.model.GroupThumb;
+import com.ssg.potato.item.model.ItemThumb;
 
 @Mapper
 public interface LikeMapper {

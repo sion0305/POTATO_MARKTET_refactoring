@@ -2,9 +2,9 @@ package com.ssg.potato.dao;
 
 import java.util.List;
 
-import com.ssg.potato.domain.AuctionThumb;
-import com.ssg.potato.domain.GroupThumb;
-import com.ssg.potato.domain.ItemThumb;
+import com.ssg.potato.item.model.AuctionThumb;
+import com.ssg.potato.item.model.GroupThumb;
+import com.ssg.potato.item.model.ItemThumb;
 
 public interface HistoryDao {
 

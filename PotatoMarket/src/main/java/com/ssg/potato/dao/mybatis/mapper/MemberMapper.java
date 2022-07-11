@@ -2,7 +2,7 @@ package com.ssg.potato.dao.mybatis.mapper;
 
 import org.apache.ibatis.annotations.Mapper;
 
-import com.ssg.potato.domain.Member;
+import com.ssg.potato.account.model.Member;
 
 @Mapper
 public interface MemberMapper {

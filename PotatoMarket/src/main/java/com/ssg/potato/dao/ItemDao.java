@@ -2,7 +2,7 @@ package com.ssg.potato.dao;
 
 import org.springframework.dao.DataAccessException;
 
-import com.ssg.potato.domain.Item;
+import com.ssg.potato.item.model.Item;
 
 public interface ItemDao {
 	// 선택시, 해당 아이템 정보 가져오기

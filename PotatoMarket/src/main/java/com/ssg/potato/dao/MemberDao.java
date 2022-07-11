@@ -1,6 +1,6 @@
 package com.ssg.potato.dao;
 
-import com.ssg.potato.domain.Member;
+import com.ssg.potato.account.model.Member;
 
 public interface MemberDao {
 	//회원가입

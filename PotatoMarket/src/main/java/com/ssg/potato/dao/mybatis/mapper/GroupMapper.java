@@ -5,7 +5,7 @@ import java.util.Date;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
-import com.ssg.potato.domain.Group;
+import com.ssg.potato.item.model.Group;
 
 @Mapper
 public interface GroupMapper {

@@ -5,7 +5,7 @@ import java.util.List;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
-import com.ssg.potato.domain.AuctionThumb;
+import com.ssg.potato.item.model.AuctionThumb;
 
 @Mapper
 public interface SucbidMapper {

@@ -2,7 +2,7 @@ package com.ssg.potato.dao;
 
 import java.util.List;
 
-import com.ssg.potato.domain.Message;
+import com.ssg.potato.message.model.Message;
 
 public interface MessageDao {
 

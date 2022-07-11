@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.springframework.dao.DataAccessException;
 
-import com.ssg.potato.domain.AuctionThumb;
+import com.ssg.potato.item.model.AuctionThumb;
 
 public interface SucbidDao {
 

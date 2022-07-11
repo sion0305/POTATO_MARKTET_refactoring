@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 
 import com.ssg.potato.dao.ItemDao;
 import com.ssg.potato.dao.mybatis.mapper.ItemMapper;
-import com.ssg.potato.domain.Item;
+import com.ssg.potato.item.model.Item;
 
 @Repository
 public class MyBatisItemDao implements ItemDao {

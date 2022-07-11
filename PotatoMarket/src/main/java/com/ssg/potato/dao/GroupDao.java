@@ -4,7 +4,7 @@ import java.util.Date;
 
 import org.springframework.dao.DataAccessException;
 
-import com.ssg.potato.domain.Group;
+import com.ssg.potato.item.model.Group;
 
 public interface GroupDao {
 	// 추가(삽입)

@@ -1,0 +1,17 @@
+package com.ssg.potato.message.service;
+
+import java.util.List;
+
+import com.ssg.potato.message.model.Message;
+
+public interface MessageService {
+	//채팅 
+	public List<Message> messageList(Message m)throws Exception;
+	
+	//메시지함
+	public List<Message> messagebox(String caller_id)throws Exception;
+
+	//메시지보내기
+	public void messagesend(Message m)throws Exception;
+
+}

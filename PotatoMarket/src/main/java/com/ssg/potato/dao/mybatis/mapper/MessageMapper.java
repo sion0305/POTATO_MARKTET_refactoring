@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.apache.ibatis.annotations.Mapper;
 
-import com.ssg.potato.domain.Message;
+import com.ssg.potato.message.model.Message;
 
 @Mapper
 public interface MessageMapper {

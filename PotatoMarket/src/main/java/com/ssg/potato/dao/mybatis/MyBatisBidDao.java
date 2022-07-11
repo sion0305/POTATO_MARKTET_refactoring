@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
 
 import com.ssg.potato.dao.BidDao;
 import com.ssg.potato.dao.mybatis.mapper.BidMapper;
-import com.ssg.potato.domain.Bid;
+import com.ssg.potato.item.model.Bid;
 
 @Repository
 public class MyBatisBidDao implements BidDao {

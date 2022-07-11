@@ -4,10 +4,10 @@ import java.util.List;
 
 import org.springframework.dao.DataAccessException;
 
-import com.ssg.potato.domain.AuctionThumb;
-import com.ssg.potato.domain.GroupThumb;
-import com.ssg.potato.domain.ItemThumb;
-import com.ssg.potato.domain.Thumb;
+import com.ssg.potato.item.model.AuctionThumb;
+import com.ssg.potato.item.model.GroupThumb;
+import com.ssg.potato.item.model.ItemThumb;
+import com.ssg.potato.item.model.Thumb;
 
 public interface SearchDao {
 	

@@ -3,10 +3,10 @@ package com.ssg.potato.dao.mybatis.mapper;
 import java.util.List;
 
 import org.apache.ibatis.annotations.Mapper;
-import com.ssg.potato.domain.Group;
-import com.ssg.potato.domain.GroupThumb;
-import com.ssg.potato.domain.Item;
-import com.ssg.potato.domain.ItemThumb;
+import com.ssg.potato.item.model.Group;
+import com.ssg.potato.item.model.GroupThumb;
+import com.ssg.potato.item.model.Item;
+import com.ssg.potato.item.model.ItemThumb;
 
 @Mapper
 public interface CartMapper {

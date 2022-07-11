@@ -6,7 +6,7 @@ import java.util.List;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
-import com.ssg.potato.domain.Auction;
+import com.ssg.potato.item.model.Auction;
 
 @Mapper
 public interface AuctionMapper {

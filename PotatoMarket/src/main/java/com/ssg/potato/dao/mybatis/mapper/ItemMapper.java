@@ -3,7 +3,7 @@ package com.ssg.potato.dao.mybatis.mapper;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
-import com.ssg.potato.domain.Item;
+import com.ssg.potato.item.model.Item;
 
 @Mapper
 public interface ItemMapper {

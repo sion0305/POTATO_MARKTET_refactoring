@@ -3,7 +3,7 @@ package com.ssg.potato.dao.mybatis.mapper;
 import java.util.List;
 
 import org.apache.ibatis.annotations.Mapper;
-import com.ssg.potato.domain.Bid;
+import com.ssg.potato.item.model.Bid;
 
 @Mapper
 public interface BidMapper {

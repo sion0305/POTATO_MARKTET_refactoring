@@ -5,7 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import com.ssg.potato.dao.MessageDao;
 import com.ssg.potato.dao.mybatis.mapper.MessageMapper;
-import com.ssg.potato.domain.Message;
+import com.ssg.potato.message.model.Message;
 import org.springframework.stereotype.Repository;
 
 @Repository

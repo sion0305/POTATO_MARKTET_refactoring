@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
 
 import com.ssg.potato.dao.GroupDao;
 import com.ssg.potato.dao.mybatis.mapper.GroupMapper;
-import com.ssg.potato.domain.Group;
+import com.ssg.potato.item.model.Group;
 
 @Repository
 public class MyBatisGroupDao implements GroupDao {

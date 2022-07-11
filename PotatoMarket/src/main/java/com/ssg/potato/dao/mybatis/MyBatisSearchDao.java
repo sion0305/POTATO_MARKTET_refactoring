@@ -8,10 +8,10 @@ import org.springframework.stereotype.Repository;
 
 import com.ssg.potato.dao.SearchDao;
 import com.ssg.potato.dao.mybatis.mapper.SearchMapper;
-import com.ssg.potato.domain.AuctionThumb;
-import com.ssg.potato.domain.GroupThumb;
-import com.ssg.potato.domain.ItemThumb;
-import com.ssg.potato.domain.Thumb;
+import com.ssg.potato.item.model.AuctionThumb;
+import com.ssg.potato.item.model.GroupThumb;
+import com.ssg.potato.item.model.ItemThumb;
+import com.ssg.potato.item.model.Thumb;
 
 @Repository
 public class MyBatisSearchDao implements SearchDao{

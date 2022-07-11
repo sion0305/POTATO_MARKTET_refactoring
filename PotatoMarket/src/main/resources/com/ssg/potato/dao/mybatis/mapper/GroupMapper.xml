@@ -29,7 +29,7 @@
 		</update>	
 		
   		<!--선택된 공구 정보 -->
-  		<select id="selectGroup" resultType="com.ssg.potato.domain.Group">
+  		<select id="selectGroup" resultType="com.ssg.potato.item.model.Group">
 			select *
 			from GROUPITEM
 			where group_id=#{group_id}

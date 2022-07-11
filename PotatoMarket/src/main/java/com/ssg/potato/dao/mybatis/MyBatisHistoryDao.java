@@ -7,9 +7,9 @@ import org.springframework.stereotype.Repository;
 
 import com.ssg.potato.dao.HistoryDao;
 import com.ssg.potato.dao.mybatis.mapper.HistoryMapper;
-import com.ssg.potato.domain.AuctionThumb;
-import com.ssg.potato.domain.GroupThumb;
-import com.ssg.potato.domain.ItemThumb;
+import com.ssg.potato.item.model.AuctionThumb;
+import com.ssg.potato.item.model.GroupThumb;
+import com.ssg.potato.item.model.ItemThumb;
 
 @Repository
 public class MyBatisHistoryDao implements HistoryDao{

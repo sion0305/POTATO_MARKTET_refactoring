@@ -25,7 +25,7 @@
 	</update>
 
 	<!--선택된 회원간 거래 정보 -->
-	<select id="selectItem" resultType="com.ssg.potato.domain.Item">
+	<select id="selectItem" resultType="com.ssg.potato.item.model.Item">
 		select *
 		from ITEM
 		where item_id=#{item_id}
@@ -46,7 +46,7 @@
 
 	<!-- 직거래 거래 완료 -->
 	<insert id="insertItemPurchase"
-		parameterType="com.ssg.potato.domain.Item">
+		parameterType="com.ssg.potato.item.model.Item">
 		INSERT INTO purchasehistory
 		VALUES (purchase_seq.nextval,#{member_id} , 1, #{item_id}, SYSDATE,
 		#{reserve}, #{price})

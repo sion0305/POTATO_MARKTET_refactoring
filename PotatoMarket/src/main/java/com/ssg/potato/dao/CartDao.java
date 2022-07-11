@@ -4,10 +4,10 @@ import java.util.List;
 
 import org.springframework.dao.DataAccessException;
 
-import com.ssg.potato.domain.Group;
-import com.ssg.potato.domain.GroupThumb;
-import com.ssg.potato.domain.Item;
-import com.ssg.potato.domain.ItemThumb;
+import com.ssg.potato.item.model.Group;
+import com.ssg.potato.item.model.GroupThumb;
+import com.ssg.potato.item.model.Item;
+import com.ssg.potato.item.model.ItemThumb;
 
 public interface CartDao {
 	//item

@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
 
 import com.ssg.potato.dao.SucbidDao;
 import com.ssg.potato.dao.mybatis.mapper.SucbidMapper;
-import com.ssg.potato.domain.AuctionThumb;
+import com.ssg.potato.item.model.AuctionThumb;
 
 @Repository
 public class MyBatisSucbidDao implements SucbidDao {

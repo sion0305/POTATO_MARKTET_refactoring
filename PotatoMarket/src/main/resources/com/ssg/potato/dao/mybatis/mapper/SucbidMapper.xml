@@ -44,7 +44,7 @@
 	</insert>
 	
 	<!-- 경매 결제하기 -->
-	<insert id="insertAuctionPurchase" parameterType="com.ssg.potato.domain.purchasedHistory">
+	<insert id="insertAuctionPurchase" parameterType="com.ssg.potato.order.model.purchasedHistory">
 		INSERT INTO purchasehistory (purchase_id, seller_id, transaction, transaction_id, purchaseddate, member_id, payment)
 		VALUES (purchase_seq.nextval, #{seller_id}, 3, #{transaction_id}, SYSDATE, #{member_id}, #{payment})
 	</insert>
@@ -65,7 +65,7 @@
 	</select>
 
 	<!-- 최종 낙찰 확정 정보 조회 -->
-	<select id="selectSucbid" resultType="com.ssg.potato.domain.AuctionThumb">
+	<select id="selectSucbid" resultType="com.ssg.potato.item.model.AuctionThumb">
 		SELECT a.auction_id, a.title, s.sucbid_price
 		FROM sucbid s join auction a on a.auction_id = s.auction_id
 		WHERE s.auction_id = #{auction_id}
@@ -73,7 +73,7 @@
 	</select>
 	
 	<!--경매 카트 검색 -->
-  	<select id="getNoConfirmSucbidListById" resultType="com.ssg.potato.domain.AuctionThumb">
+  	<select id="getNoConfirmSucbidListById" resultType="com.ssg.potato.item.model.AuctionThumb">
 		SELECT a.auction_id, a.title, s.sucbid_price, a.fileName
         from auction a join sucbid s on a.auction_id = s.auction_id
         where s.buyer_id = #{buyer_id} AND s.confirm = 0
