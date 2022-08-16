@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="PotatoMarket:war">
+    <output-path>$PROJECT_DIR$/PotatoMarket/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>PotatoMarket</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="PotatoMarket.war">
+      <element id="artifact" artifact-name="PotatoMarket:war exploded" />
+    </root>
+  </artifact>
+</component>
