@@ -1,5 +1,7 @@
 package com.ssg.potato.account.controller;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -15,45 +17,46 @@ import com.ssg.potato.account.service.MemberValidator;
 
 @Controller
 @RequestMapping("/member")
-public class MemberRegistController {
-	private static final String FORM_VIEW = "../jsp/join";
-	private static final String RESULT_VIEW = "../jsp/login";
+
+public class AccountUpdateController {
+	private static final String FORM_VIEW = "../jsp/profileUpdate";
 	
 	@Autowired
 	private MemberService memberService;
 	public void setMemberService(MemberService memberService) {
 		this.memberService = memberService;
 	}
-	
+
 	@ModelAttribute("member")
-	public Member formBacking()  {
-		Member member = new Member();
+	public Member formBacking(HttpServletRequest request) throws Exception  {
+		
+		String member_id = UserSession.getLoginMemberId(request.getSession());
+		Member member = memberService.memberFind(member_id);
+			
 		return member;
 	}   
-
-	@RequestMapping(value="/join" ,method = RequestMethod.GET)
+	
+	@RequestMapping(value="/update" ,method = RequestMethod.GET)
 	public String form() {
 		return FORM_VIEW;
 	}
-		
-	@RequestMapping(value="/save", method = RequestMethod.POST)
+	
+	@RequestMapping(value="/update", method = RequestMethod.POST)
 	public String submit(
 			@ModelAttribute("member") Member member,
 			BindingResult result, Model model, SessionStatus sessionStatus) throws Exception {		
 		
 		System.out.println("command 객체: " + member);	
-		new MemberValidator().validate(member, result);
+	    new MemberValidator().validate(member, result);
 
 		if (result.hasErrors()) {
 			return FORM_VIEW;
 		}
 		
-		memberService.memberJoin(member);	
-		sessionStatus.setComplete(); // session에서 객체 삭제
-		return RESULT_VIEW;
-	}	
-	
-	
-	
-}
+		memberService.memberUpdate(member);	
+		return "redirect:/member/profile";
 
+	}
+
+
+}

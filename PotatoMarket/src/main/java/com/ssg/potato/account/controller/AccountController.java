@@ -15,9 +15,9 @@ import com.ssg.potato.account.model.Member;
 import com.ssg.potato.account.service.MemberService;
 
 @Controller
-public class MemberController {
+public class AccountController {
 
-	private static final org.slf4j.Logger logger = LoggerFactory.getLogger(MemberController.class);
+	private static final org.slf4j.Logger logger = LoggerFactory.getLogger(AccountController.class);
 
 	@Autowired
 	private MemberService memberservice;

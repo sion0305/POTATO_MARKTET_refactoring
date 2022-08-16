@@ -95,7 +95,7 @@ h1
 
    
    <div class="container">
-   <div class="row">
+   <div class="row">ll
    
    <!--team-1-->
    <div class="col-lg-4">
@@ -118,7 +118,7 @@ h1
    
    <div class="team-front">
     <a href="<c:url value="/member/purchaseDetail1"/>">
-   <img src="/images/cook.png" width="50" height="90"  class="img-fluid" /></a>
+   <img src="/images/cook.png" width="50" height="90"  class="img-fluid"/></a>
    <h3>구매내역</h3>
    </div>
    

@@ -16,9 +16,9 @@ import org.springframework.stereotype.Controller;
 import com.ssg.potato.account.service.MemberService;
 
 @Controller
-public class MemberProfileController {
+public class AccountProfileController {
 
-	private static final org.slf4j.Logger logger = LoggerFactory.getLogger(MemberController.class);
+	private static final org.slf4j.Logger logger = LoggerFactory.getLogger(AccountController.class);
 
 	@Autowired
 	private MemberService memberservice;
